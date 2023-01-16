@@ -1,8 +1,4 @@
 
-const ratingBtn = document.querySelectorAll(".ratingBtn")
-const ratingResult = document.querySelector(".ratingResult")
-
-
 $(function () {
     $(".btnSubmit").click(function () {
         $(".rateArea").css("display", "none")
@@ -13,10 +9,9 @@ $(function () {
         $(".thanksArea").css("display", "none")
     })
 
-})
-ratingBtn.forEach((rating) => {
-    rating.addEventListener("click", () => {
-        ratingResult.innerText = rating.innerText;
+    $(".ratingBtn").click(function(event){
+        $(".ratingResult").html(event.target.textContent)
     })
+
 })
 
