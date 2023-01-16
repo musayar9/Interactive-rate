@@ -10,7 +10,7 @@ $(function () {
     })
 
     $(".ratingBtn").click(function(event){
-        $(".ratingResult").html(event.target.textContent)
+        $(".ratingResult").text(event.target.textContent)
     })
 
 })
